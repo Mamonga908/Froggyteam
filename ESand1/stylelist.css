@@ -1,7 +1,4 @@
-*{
-    background-color: rgb(89, 153, 106);
 
-}
 
 
 
@@ -23,7 +20,16 @@
     width: 40px;
 }
 .navbar-toggler{
-    background-color: rgb(130, 172, 158);}
+    background-color: rgb(130, 172, 158);
+}
+
+/*{
+    background-color: rgb(89, 153, 106);
+
+}*/
+
+
+
 .main-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
