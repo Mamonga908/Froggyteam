@@ -25,8 +25,8 @@ header{
     background-color: #d4dcc3;
 }
 .card{
-    height: 70vh;
-    width: 30vh;
+    height: 12rem;
+    width: 11rem;
 }
 .text-place{
     object-fit: cover;
