@@ -56,6 +56,14 @@
     color: azure;
     border-color: rgb(30, 28, 28);
 }
+.footer-text {
+    color: rgb(38, 48, 45);
+    margin:auto auto ;
+}
+footer,
+.btn-outline-primary{
+    background:  linear-gradient(180deg, #e3dbbd 0%, #fffcc9 100%);
+}
 @media (max-width: 1000px) {
     .main-container{
         grid-template-rows: repeat(3);
