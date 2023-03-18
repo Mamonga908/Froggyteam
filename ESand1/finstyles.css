@@ -1,0 +1,24 @@
+
+.nav-link{
+    color: rgb(159, 227, 227);
+}
+.navbar-nav .nav-link.active{
+    color: rgb(130, 172, 158);
+}
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: rgb(130, 172, 158);
+}
+/*.imag{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+.image-place{ 
+  height: 30hv;
+  overflow-x: auto;
+}
