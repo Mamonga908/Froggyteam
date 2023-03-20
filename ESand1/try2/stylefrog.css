@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,400;0,600;0,800;1,200;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/*Конструкци сайта*/
+/* .menu{
+   display: grid;
+    grid-template-areas: 
+                "head head head"
+                "side content content"
+                "foot foot foot";
+    grid-template-rows: auto auto auto;
+}*/
+/*header{ grid-area: head;}
+article{ grid-area: content;}
+aside{ grid-area: side;}
+footer{ grid-area: foot;}*/
+/*Навигаци*/
+.nav-link{
+    color: rgb(159, 227, 227);
+}
+.navbar-nav .nav-link.active{
+    color: rgb(130, 172, 158);
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: rgb(130, 172, 158);
+}
+/*режимы*/
+:root {
+    --c-text-primary: #191919;
+    --c-text-secondary: #737374;
+    --c-border-primary: #ccc;
+    --c-bg-body: #2c2e2f;
+    --c-bg-primary: #fff;
+    --c-bg-secondary: rgb(230, 244, 248);
+    --c-bg-button: #fff;
+    --slider-shadow: inset 0 1px 1px #ddd, 0 2px 3px #ccc;
+}
+:root.dark-theme {
+    --c-text-primary: #eee;
+    --c-text-secondary: #d3d5db;
+    --c-border-primary: #454545;
+    --c-bg-primary: #323339;
+    --c-bg-secondary: #222128;
+    --c-bg-button: #494a50;
+    --slider-shadow: inset 0 1px 1px #767676;
+}
+:root.black-theme {
+    --c-text-primary: #edeeef;
+    --c-text-secondary: #d4d7e1;
+    --c-border-primary: #323232;
+    --c-bg-primary: #1b1d23;
+    --c-bg-secondary: #000001;
+    --c-bg-button: #343844;
+    --slider-shadow: inset 0 1px 1px #555;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--c-bg-body);
+    color: var(--c-text-primary);
+}
+.menu {
+    background-color: var(--c-bg-primary);
+    transition: background-color 0.15s ease;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 -4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header-title, p{
+    font-size: 0.875rem;
+    color: var(--c-text-secondary);
+    margin-bottom: 0.375rem;
+    font-weight: 500;
+}
+.dropdown-menu{
+    background-color: var(--c-bg-secondary);
+}
+.theme-switcher {
+    background-color: var(--c-bg-secondary);
+    border-radius: 10px;
+    display: flex;
+    padding: 0 3px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.theme-switcher .slider {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: calc((100% - 6px) / 3);
+    top: 3px;
+    transform: translatex(-110%);
+    bottom: 3px;
+    border-radius: 6px;
+    transition: 0.15s ease, transform 0.25s ease-out;
+    background-color: var(--c-bg-button);
+    box-shadow: var(--slider-shadow);
+}
+.theme-switcher input {
+    display: none;
+}
+.theme-switcher input:nth-of-type(1):checked ~ .slider {
+    transform: translateX(0);
+}
+.theme-switcher input:nth-of-type(2):checked ~ .slider {
+    transform: translateX(100%);
+}
+.theme-switcher input:nth-of-type(3):checked ~ .slider {
+    transform: translateX(200%);
+}
+.theme-switcher label {
+    position: relative;
+    z-index: 2;
+    width: calc(100% / 3);
+    color: var(--c-text-secondary);
+}
+.theme-switcher label span {
+    padding: 8px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.theme-switcher label svg {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 20px;
+}
+.menu-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-top: 1px solid var(--c-border-primary);
+    transition: border-color 0.15s ease;
+}
+.menu-body a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: 0.15s ease;
+}
+.menu-body a svg {
+    margin-right: 1rem;
+    color: var(--c-text-secondary);
+    transition: color 0.15s ease;
+}
+.menu-body a:hover {
+    background-color: var(--c-bg-secondary);
+}
+
+/*прокрутка аниме тайтлов*/
+.scroller{
+    max-width: 120vh;
+    max-height: auto;
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-column: 15px;
+    gap: 4px 14px;
+}
+.scroller-item{
+    position: relative;
+    width: 8rem;
+    height: 11rem; 
+}
+/*Рубрика*/
+.border-place{
+   background-color: #555;
+   
+}
+.objkt{
+   
+   display: flex;
+}
+.borer1{
+   /* display: grid;
+    grid-template-areas: 
+                "textplace picture picture "
+                "textplace picture picture ";
+    grid-template-rows: auto auto auto;*/
+    display: inline-flex;
+  
+
+}
+.border2{
+    display: inline-flex;
+    /*display: grid;
+    grid-template-areas: 
+                "textplace picture picture "
+                "textplace picture picture ";
+    grid-template-rows: auto auto auto;*/
+  
+}
+/*.pic-page{ grid-area: picture;}
+.text-page{ grid-area: textplace;}*/
+.text-page{
+    width: 10hv;
+    height: auto;
+}
+.pic-page>img{
+    width: 30vh;
+    height: auto;
+}
+/*низ*/
+.footer-text {
+    color:var(--c-text-secondary) ;
+    margin:auto auto ;
+}
+footer{
+   /* background-color: #837571;*/
+   background-color: #839592;
+    width: 100%;
+    height: 100%;
+}
+
+/*@media (max-width: 1000px) {
+    .menu{
+        grid-template-rows: repeat(3);
+    }
+    header{
+        grid-column:  1/13;
+        grid-row: 1/4;
+    }
+    aside{
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+    article{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column:  1/13;
+        grid-row: 3/4;
+    }
+}*/
