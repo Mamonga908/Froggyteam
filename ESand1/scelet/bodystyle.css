@@ -1,0 +1,100 @@
+/* просто это надо */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* цвета ниже указаны для наглядности */
+body{
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+/* далее заменил все на классы ибо условие тегов все ломали */
+.cont{
+    background-color: rgb(81, 93, 89);
+}
+.article1, .div3{
+    text-align: center;
+}
+/* место для заставочной картинки над навигационкой */
+.header1{
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(59, 122, 101);
+}
+/* сюда пихнем полосу прокрутки тайтлов */
+.main1{
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(171, 219, 203);
+}
+/* самый низ */
+ .footer3{
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgb(33, 155, 114);
+ }
+ /* навигационка */
+.nav1{
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(33, 155, 114);
+}
+/* основная панель */
+.article1{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(53, 208, 157);
+    display: inline-block; 
+    margin: 5px;
+    font-size: 0;
+}
+ /* начинка основной панели */
+  .header2, .section1, .section2{ 
+    display: inline-flex;
+    margin: 5px;
+    height: 80px;
+    width: 90%;
+    background-color: aqua;
+  }
+   .header2{
+    margin-top: 5%;
+    margin-bottom: 25%;
+   }
+   .footer1{
+    display: inline-flex;
+    margin: 5px;
+    height: 70px;
+    width: 90%;
+    background-color: aqua;
+   }
+   /* боковая панель */
+.div3{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(192, 226, 214);
+    display: inline-block; 
+    margin: 5px;
+}
+/* ее содержимое */
+.aside1,.aside2{
+    display: inline-flex;
+    background-color: aqua;
+    width: 90%;
+    height: 42%;
+    margin-top: 2%;
+
+}
+.aside1{
+    margin-top: 15%;
+}
+/* объединялка для див3 и артикла1 */
+.forms{
+    display: flex;
+}
