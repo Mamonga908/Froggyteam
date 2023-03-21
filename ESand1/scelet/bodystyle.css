@@ -243,7 +243,15 @@ body{
 }
 .footer3{
    /* background-color: #837571;*/
+   
    background-color: #839592;
     width: 100%;
     height: 100%;
+}
+.sis{
+    font-size: larger;
+   
+} 
+.abs,.sis{
+  color: #fff;  
 }
