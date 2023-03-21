@@ -1,0 +1,46 @@
+/* Адоптивка (можно меньть проценты если руинится) */
+.header1, .nav1, .footer3,.main1{
+    width: 100%;
+}
+.article1{
+    width: 70%;
+}
+ .div3{
+    width: 29%;
+    border: red;
+}
+/* ноут мелкий */
+@media(max-width: 1024px) {
+    .div3{
+     width: 37%;
+    }
+    .article1{
+     width: 60%;
+    }
+  
+ } 
+ /* планшет */
+ @media(max-width: 800px) {
+    .div3{
+     width: 35%;
+    }
+    .article1{
+     width: 60%;
+    }
+      
+ } 
+ /* телефы */
+ @media(max-width: 600px) {
+     .header1, .nav1, .footer3,.main1{
+         width: 100%;
+     }
+     .div3{
+      width: 95%;
+     }
+     .article1{
+      width: 95%;
+     }
+       .forms{
+        display: block;
+    } 
+  } 

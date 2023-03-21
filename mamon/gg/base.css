@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    background-color: aquamarine;
+}
+.container{
+    margin: 0 auto;
+}
+.services, .projects{
+    text-align: center;
+}
+
+.header{
+    background-color: rgb(70, 126, 108);
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+}
+.service{
+    width: 290px;
+    height: 200px;
+    background-color: rgb(53, 208, 157);
+    display: inline-block;
+    margin: 5px;
+    font-size: 0;
+}
+.project{
+    width: 390px;
+    height: 200px;
+    background-color: rgb(192, 226, 214);
+    display: inline-block;
+    margin: 5px;
+}

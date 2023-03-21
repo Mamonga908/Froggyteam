@@ -1,0 +1,37 @@
+.header{
+    width: 100%;
+    background-color: rgb(204, 51, 51);
+}
+.services{
+    width: 100%;
+}
+.service{
+    background-color: rgb(227, 177, 95);
+    width: 23%;
+}
+.project{
+    width: 32%;
+    background-color: rgb(227, 129, 129);
+}
+@media(max-width: 1024px) {
+   .service{
+    width: 45%;
+   }
+   .project{
+    width: 90%;
+   }
+    
+} 
+@media(max-width: 600px) {
+    .header{
+        width: 100%;
+    }
+    .service{
+     width: 95%;
+    }
+    .project{
+     width: 95%;
+    }
+     
+ } 
+ 
