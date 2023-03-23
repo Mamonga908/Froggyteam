@@ -186,7 +186,7 @@ body{
     width: 500px;
     height: 600px;
     font-family: "Poppins", sans-serif;
-    background-color: var(--c-bg-secondary) ;
+    background-color:rgb(130, 172, 158) ;
     color:var(--c-bg-body) ;
     display: inline-block; 
     margin: 5px;
