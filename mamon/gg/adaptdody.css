@@ -7,7 +7,6 @@
 }
  .div3{
     width: 29%;
-    border: red;
 }
 /* ноут мелкий */
 @media(max-width: 1024px) {

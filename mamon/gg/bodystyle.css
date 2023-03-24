@@ -228,21 +228,27 @@ body{
     width: 90%;
     height: 42%;
     margin-top: 2%;
-
+    
 }
 .aside1{
     margin-top: 15%;
+    background-color: red;
+
+}
+.aside2{
+    
 }
 /* объединялка для див3 и артикла1 */
 .forms{
     display: flex;
+    
 }
 .footer-text {
     color:var(--c-text-secondary) ;
     margin:auto auto ;
 }
 .footer3{
-   /* background-color: #837571;*/
+   /* background-color: #ff0000; */
    
    background-color: #839592;
     width: 100%;
