@@ -239,6 +239,9 @@ body{
     display: flex;
     
 }
+
+
+
 .footer-text {
     color:var(--c-text-secondary) ;
     margin:auto auto ;
